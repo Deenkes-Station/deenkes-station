@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "size": {"x": 32, "y": 32},
+  "license": "All right reserved",
+  "copyright": "Created by Deenkaide / deenke (GitHub / Discord)",
+  "states": [
+    {
+      "name": "full"
+    },
+    {
+      "name": "frame"
+    },
+    {
+      "name": "metal0",
+      "directions": 4
+    },
+    {
+      "name": "metal1",
+      "directions": 4
+    },
+    {
+      "name": "metal2",	
+      "directions": 4
+    },
+    {
+      "name": "metal3",
+      "directions": 4
+    },
+    {
+      "name": "metal4",
+      "directions": 4
+    },
+    {
+      "name": "metal5",
+      "directions": 4
+    },
+    {
+      "name": "metal6",
+      "directions": 4
+    },
+    {
+      "name": "metal7",
+      "directions": 4
+    }
+  ]
+}
