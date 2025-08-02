@@ -1,0 +1,33 @@
+- type: entity
+  parent: DeenkesRimBaseStructureWall
+  id: DeenkesRimStructureWallWood
+  name: wood wall
+  description: It is a wall.
+  components:
+  ### Sprite
+  - type: Sprite
+    sprite: _DeenkesRim/Structures/Walls/wood.rsi
+    color: "#654321"
+  - type: Icon
+    sprite: _DeenkesRim/Structures/Walls/wood.rsi
+  - type: IconSmooth
+    key: walls
+    base: wood
+  # ### Destruction
+  # - type: RCDDeconstructable
+  #   cost: 6
+  #   delay: 8
+  #   fx: EffectRCDDeconstruct8
+  # - type: Destructible
+  #   thresholds:
+  #   - trigger:
+  #       !type:DamageTrigger
+  #       damage: 300
+  #     behaviors:
+  #     - !type:SpawnEntitiesBehavior
+  #       spawn:
+  #         Girder:
+  #           min: 1
+  #           max: 1
+  #     - !type:DoActsBehavior
+  #       acts: [ "Destruction" ]

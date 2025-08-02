@@ -1,0 +1,61 @@
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: DeenkesRimBaseStructureWall
+  name: wall
+  description: Keeps the air in and the greytide out.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  ### Placement
+  - type: PlacementReplacement
+    key: walls
+  ### Sprite
+  - type: Sprite
+    drawdepth: Walls
+  - type: Icon
+    state: full
+  ### Physics
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+  - type: Airtight
+  - type: IsRoof
+  - type: BlockWeather
+  - type: SunShadowCast
+  - type: Occluder # Breaks on diagonal walls
+  ### Other
+  - type: Tag
+    tags:
+    - Wall
+
+  # ### Damage
+  # - type: RangedDamageSound
+  #   soundGroups:
+  #     Brute:
+  #       collection:
+  #         MetalBulletImpact
+  #   soundTypes:
+  #     Heat:
+  #       collection:
+  #         MetalLaserImpact
+  # - type: Damageable
+  #   damageContainer: StructuralInorganic
+  #   damageModifierSet: StructuralMetallic
+  # ### Other
+  # - type: StaticPrice
+  #   price: 75
+  # - type: RadiationBlocker
+  #   resistance: 2
