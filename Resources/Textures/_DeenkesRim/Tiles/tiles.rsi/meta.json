@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "size": {"x": 32, "y": 32},
+  "license": "All right reserved",
+  "copyright": "Created by Deenkaide / deenke (GitHub / Discord)",
+  "states": [
+    {
+      "name": "metal"
+    },
+    {
+      "name": "wood"
+    }
+  ]
+}
